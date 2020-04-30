@@ -29,7 +29,3 @@ At the top right of each page, there should be a button to download each map as 
 Be sure to do this and then move those files to the output folder. The png files should be called:
 edu.png, dem.png, pov.png, rep.png, unemployment.png. Now, be sure to move these files over to the IDE and place them in their
 corresponding folders (the IDE directory should be set up the exact same way with files related to the Flask script).
-
-In the IDE, switch into the website directory and execute "flask run." This will allow you to view the wesbite we created
-This step is really crucial. Do not misplace any files or change their names; otherwise, the website won't work. We're sorry about
-this step – we wish we could've just done everything on the IDE.
