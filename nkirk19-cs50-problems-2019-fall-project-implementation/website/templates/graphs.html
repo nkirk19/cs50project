@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Graphs
+{% endblock %}
+
+{% block main %}
+    <h4>Use the dropdown menu to access the maps we created.</h4>
+    <br>
+    <form action="/graphs" method="post">
+
+                <select name="graphs">
+                  <option value="education">Education Level by County</option>
+                  <option value="unemploy">Unemployment by County</option>
+                  <option value="poverty">Poverty by County</option>
+                  <option value="democrat">Democratic Vote by County</option>
+                  <option value="republican">Republican Vote by County</option>
+                </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Observations
+{% endblock %}
+
+{% block main %}
+    <h1 class="title">Observations and Conclusions</h1>
+
+    <p>
+        With each pair of values among unemployment percentage, poverty percentage, education percentage (bachelor or higher),
+        Democrat voting percentage (for the 2016 presidential election), and Republican voting percentage (for the 2016
+        presidential election), we observed the following correlations—visualized as both correlation plots and a heatmap of
+        correlation strengths:
+    </p>
+    <br>
+
+    <img src="/static/Correlation_PairedVals.png" alt="paired value correlations" width=60% weight="300" class="center">
+
+    <br>
+
+    <img src="/static/Correlation_Heatmap.png" alt="correlation heatmap" width=85% weight="300" class="center">
+
+    <br>
+
+    <h2>Education</h2>
+
+    <p>From the choropleth maps, it can be observed that there are certain areas within the United States where there is a
+    dense population of individuals with a bachelor’s degree or higher. For example, the Northeast
+    is densely populated with those who have attained higher levels of education, likely because of the wealth accumulation,
+    elite universities, and major cities — such as New York, Boston, Providence, and Philadelphia. Moreover, education levels seem
+    to be higher in cities. This is likely because cities host more companies and job opportunities. Lastly, areas that host
+    universities and students are also shown to have higher levels of education. </p> <br>
+
+    <p>On a county-by-county basis, there exists a strong negative correlation between having a higher levels of education
+    (bachelor’s degree or higher) and poverty (-48%). This matched our hypothesis prior to the project. While slightly weaker,
+    there is also a negative correlation between having a bachelor’s degree or higher and unemployment (-35%). Similarly, we were
+    not surprised by this fact.</p> <br>
+
+    <p>Counties which had a comparatively higher level of education as measured by the bachelors degree or higher percentage
+    correlated relatively strongly (43%) with voting Democratic in the 2016 Presidential Election, while the inverse was
+    true for the correlation between and education level measured by a bachelors degree or higher percentage with
+    voting Republican (-48%).</p> <br>
+
+    <h2>Unemployment</h2>
+
+    <p>When observing the choropleth maps, there were certain areas throughout the country that had concentrated levels of
+    poverty. These include areas along the Southern border and Southern states — such as Kentucky, West Virginia, Alabama.
+    On the other hand, New England states have significantly less unemployment rates. To our surprise, states more
+    central in the country — such as Nebraska and Kansas — also had lower levels of unemployment. This might be because
+    the population of these states are relatively low.</p> <br>
+
+    <p>In terms of correlation, unemployment unsurprisingly strongly correlates to poverty (55%). As previously mentioned,
+    the correlation between unemployment and education is negative. Both of these correlations were expected.</p> <br>
+
+    <p>Unemployment positively correlates with a preference for voting Democrat (20%). Inversely, unemployment correlates
+    negatively with a preference for voting Republican (-16%). While this was expected, we were expecting the correlation
+    values to be higher.</p> <br>
+
+    <h2>Poverty</h2>
+
+    <p>The choropleth maps show that poverty rates concentrate in Southern states. This includes high levels of poverty
+    in certain areas in Arizona, New Mexico, Southern Texas, Louisiana, Arkansas, Mississippi, Alabama, Georgia, South
+    Carolina, North Carolina, Kentucky, and West Virginia. This trend is also true for certain areas, like Montana and South
+    Dakota.</p> <br>
+
+    <p>Poverty is positively correlated with unemployment and negatively correlated with having a bachelor’s degree or
+    higher. While poverty and employment appear to overlap strongly in a number of regions - such as Eastern Kentucky,
+    New Mexico, Western Mississippi — it is not always the case in other areas. For example, poverty appears to be
+    comparatively higher in some regions of the South East, whereas the unemployment rates in some of those same
+    areas are lower. This may mean that, while individuals are employed and actively working, they may be unable to
+    afford everyday necessities and would thus drop below the federal poverty line.</p> <br>
+
+    <p>With regards to party preference, poverty is positively correlated with a preference for voting Democrat (16%)
+    and negatively correlated with a preference for voting Republican (-9%).</p> <br>
+
+    <h2>Party Preference</h2>
+
+    <p>While the correlations for the preference of party with education, unemployment, and poverty have been
+    detailed above, the geographic distribution of voters is important to note. From the 2016 presidential election,
+    the majority of U.S. from a geographical coverage percentage voted Republican. In other words, rural areas
+    covering much of the country comparatively voted Republican, whereas strong Democratic support was in the the
+    more densely populated locations within the country.</p>
+
+
+{% endblock %}

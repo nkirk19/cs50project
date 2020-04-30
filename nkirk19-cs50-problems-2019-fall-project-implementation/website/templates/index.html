@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Trends in Voting: 2016 Presidential Election Edition
+{% endblock %}
+
+{% block main %}
+    <h1 class = "title">Trends in Voting: 2016 Presidential Election Edition</h1>
+    <img src="/static/election.jpg" alt="2016 Presidential Election" width=70% class="center">
+
+    <footer class="small text-center text-muted">
+       <a href="https://www.cnn.com/2016/07/01/entertainment/gallery/celebs-support-clinton-trump/index.html">Image Source</a>
+    </footer>
+
+    <br>
+    <br>
+
+    <h1 class = "title">Welcome to our website!</h1>
+    <p style="text-align: center">To navigate our site, click on the pages below or on the tabs on the navigation bar at the top of the page.</p>
+
+    <div class="container center" >
+        <div class="card" style="width: 18rem; float: left">
+          <div class="card-body">
+            <h5 class="card-title">About</h5>
+            <p class="card-text">Visit this page to read more about the purpose and people behind this project.</p>
+            <br>
+            <br>
+            <a href="/about" class="btn btn-primary">Visit page</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem; float: left">
+          <div class="card-body">
+            <h5 class="card-title">Graphs</h5>
+            <p class="card-text">Visit this page to view choropleth maps of education level, unemployment, poverty, Democratic vote, and Republican vote
+            by county in the U.S.</p>
+            <a href="/graphs" class="btn btn-primary">Visit page</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Observations</h5>
+            <p class="card-text">Visit this page to see correlations between the variables we analyzed, and to read about our observations from each choropleth map.</p>
+            <a href="/observations" class="btn btn-primary">Visit page</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card" style="width: 18rem; float: left">
+          <div class="card-body">
+            <h5 class="card-title">Data</h5>
+            <p class="card-text">Visit this page to access the raw data used for this project.</p>
+            <a href="/rawdata" class="btn btn-primary">Visit page</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; float: left">
+          <div class="card-body">
+            <h5 class="card-title">Contact</h5>
+            <p class="card-text">Visit this page contact us with any questions or feedback.</p>
+            <a href="/contact" class="btn btn-primary">Visit page</a>
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+{% endblock %}

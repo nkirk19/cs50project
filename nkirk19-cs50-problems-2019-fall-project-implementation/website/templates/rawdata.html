@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Data
+{% endblock %}
+
+{% block main %}
+
+    <h1 class="title">Data Citation</h1><br>
+    <h2>Data Sets<br></h2>
+    <p>Five data sets were used in the creation of this project. They are all listed below. Please feel free to click on the links to take you to the
+    original source of information.</p>
+
+    <h2>1. FIPS Code</h2>
+    <p>The <a href="https://github.com/kjhealy/fips-codes/blob/master/county_fips_master.csv">Federal Information Processing Standards (FIPS)</a> Code
+    was used to standardize datasets. The FIPS code assigns a code for each county in the US. Thus, across the various datasets mentioned below,
+    the FIPS code acted as the 'id' to link together data. Interestingly, FIPS are public standards developed and upkept by the
+    <a href="https://www.nist.gov/itl/fips-general-information">National Institute
+    of Standards and Technology</a> for the purpose of cybersecurity. It was first established in 2008 by the US Department of Commerce to establish
+    a centralized way of identifying counties across the country.</p>
+
+    <h2>2. 2016 Presidential Election Results</h2>
+    <p>Data of the <a href="https://raw.githubusercontent.com/tonmcg/US_County_Level_Election_Results_08-16/master/2016_US_County_Level_Presidential_Results.csv">results</a>
+    of the 2016 Presidential Election were used to investigate whether certain factors correlated with political preference. This data includes the
+    total number of votes, total number of votes cast for the Democratic contender, Hillary Clinton, and the total number of votes cast for the
+    Republican contender, Donald Trump.</p>
+
+    <h2>3. Unemployment</h3>
+    <p>Data regarding <a href="https://www.ers.usda.gov/webdocs/DataFiles/48747/Unemployment.xls">unemployment rates</a> in the United States was
+    used as one of the factors analyzed in the project. The dataset used is compiled by the
+    <a href="https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/">United States Department of Agriculture</a> Economic
+    Research Service. This dataset includes the total civilian labor force count, the number of employed people, the number of unemployed
+    people, and the unemployment rate for each county every year between 2007-2018.</p>
+
+    <h2>4. Poverty</h2>
+    <p>Data concerning <a href="https://www.ers.usda.gov/webdocs/DataFiles/48747/PovertyEstimates.xls">poverty rates</a> in the United States
+    was also taken from the <a href="https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/">United States Department of Agriculture</a>
+    Economic Research Service. This data includes the overall poverty rate of each county in the United States in the year 2017.</p>
+
+    <h2>5. Education</h2>
+    <p>Data concerning <a href="https://www.ers.usda.gov/webdocs/DataFiles/48747/Education.xls">education rates</a> in the United States
+    was also taken from the <a href="https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/">United States Department of Agriculture</a>
+    Economic Research Service. This data includes educational attainment within each county in 1970, 1980, 1990, 2000, and 2013-2017.
+    Educational attainment levels include: 'Less than a high school diploma', 'High school diploma only', 'Some college (1-3 years), and 'Four years of college
+    or higher'.</p>
+
+{% endblock %}
